@@ -14,4 +14,5 @@ You can freely change the script name. <br>
 ## change_files_prefix.sh
 a simple bash script that allows you to change the prefix of multiple files in the current folder and subfolders. <br>
 usage: ./script.sh old_prefix new_prefix <br>
-For example, you have B1xxx.txt, B1yyy.txt and ./test/B1zzz.txt, and you want to change the 'B1' prefix to 'A1'. You can type in <br> ./script.sh B1 A1 <br>
+For example, you have B1xxx.txt, B1yyy.txt and ./test/B1zzz.txt, <br>
+and you want to change the 'B1' prefix to 'A1'. You can type in <br> ./script.sh B1 A1 <br>

@@ -1,5 +1,6 @@
 # General guide
-After you download a bash script,and you may need to grant the script 'run' permission. To do this, you can type: <br>
+After you download a bash script,and you may need to grant the script 'run' permission. <br>
+To do this, you can type: <br>
 $ chmod 755 script.sh <br>. In the following, I use 'script.sh' for my short-handed notation.
 
 

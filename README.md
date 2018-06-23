@@ -12,7 +12,7 @@ usage: ./script.sh old_string new_string <br>
 or just ./script.sh  (the prompt will guide you to input strings) <br>
 then it will pop up the found files and the corresponding lines. <br>
 It wait a user to confirm, then old_string is replaced by new_string. <br>
-The script also create backup, just in case you want to redo.
+The script also create backup, just in case you want to redo. <br>
 You can freely change the script name. <br>
 
 ## change_files_prefix.sh

@@ -1,21 +1,42 @@
 #!/bin/bash
-# to avoid we miss arguments.
-if [ "$1" = "" ] || [ "$2" = "" ]; then
-    echo " we need 2 arguments" 
-    exit
-fi
 
-# set arg1 = old prefix, and arg2 = new prefix.
-old=$1
-new=$2
-tmpFile=".found_file.txt"
+# when user doesn't input arguments, we should prompt message
+# for a user to input the old and new prefix.
+if [ "$#" = "2" ] ; then
+    # set arg1 = old prefix, and arg2 = new prefix.
+    old=$1
+    new=$2
+else
+    printf 'Enter old prefix :'
+    read -r old
+
+    printf 'Enter new prefix :'
+    read -r new
+
+fi
+ 
+
+ 
 
 
 # to find the match file with old prefix.
 # and save to a file
+tmpFile=".found_file.txt"
 find -iname "${old}*" > $tmpFile
 
+echo " the following file(s) will be changed."
+echo "_______________________________"
+while read -r fileName; do
+    echo "${fileName}" 
+done < $tmpFile
+# to let a user to double check the change.
+echo "_______________________________"
+echo "replace prefix from $old to $new? (y/n)" 
+read ans
 
+if [ "$ans" != "y" ]; then
+    exit
+fi
 
 # read in each line from tmpFile 
 # and assign its content to fileName.  

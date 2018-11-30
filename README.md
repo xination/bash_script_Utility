@@ -22,3 +22,11 @@ or just ./script.sh (the prompt will guide you to input strings) <br>
 For example, you have B1xxx.txt, B1yyy.txt and ./test/B1zzz.txt, <br>
 and you want to change the 'B1' prefix to 'A1'. You can type in <br>
 ./script.sh B1 A1 <br>
+
+
+## replace_space_in_filename.sh
+This script allows you to change the spaces to underscores in filenames. 
+The script will search the files which contain spaces under the current folder.
+It will pop up information for the found files for a user to confirm the 
+change of filenames.
+

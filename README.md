@@ -30,3 +30,6 @@ The script will search the files which contain spaces under the current folder.
 It will pop up information for the found files for a user to confirm the 
 change of filenames.
 
+## ctag_cscope.sh
+call ctags and cscope to create tags   
+(by default, it search for ./src and ./include)

@@ -23,5 +23,5 @@ else
     # usage" ./script keyword1 "" keyword2 ( just search keyword1 and keyword2 )
     find . -iname "*${searchString}*${searchSuffix}" 2>/dev/null | \
         grep -i --color=always ${searchString} | \
-        GREP_COLORS="mt=01;34" grep ${additionalString}
+        GREP_COLORS="mt=01;34" grep -i ${additionalString}
 fi 

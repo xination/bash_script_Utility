@@ -33,3 +33,16 @@ change of filenames.
 ## ctag_cscope.sh
 call ctags and cscope to create tags   
 (by default, it search for ./src and ./include)
+
+
+## findhere.sh
+It is an application of using "find" and "grep" programs.   
+./script -h => show the help message.   
+./script keyword1        =>ex: ./findhere abc   
+./script keyword1 suffix =>ex: ./findhere abc pdf   
+./script keyword1 "" keyword2 =>ex: ./findhere abc "" xyz   
+./script keyword1 suffix keyword2 =>ex: ./findhere abc pdf xyz      
+
+for highlighted color:
+keyword1 = red and keyword2 = blue color    
+
